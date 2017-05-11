@@ -1,0 +1,65 @@
+// // ==================================================================== Input
+input, textarea {
+  font-size: $font-size-base;
+  padding: $gutter + 2;
+  border: 1px solid $border-color;
+  @include animation;
+  @include border-radius;
+  &:focus {
+    outline: none;
+    border-color: darken($border-color, 25%);
+  }
+}
+
+.input-data {
+  margin-bottom: ($gutter * 2);
+
+  label {
+    font-size: $font-size-base;
+    display: inline-block;
+    margin-right: $gutter * 2;
+  }
+
+  .full-input {
+    min-width: $width-input;
+  }
+
+  .alignment-label {
+    min-width: 128px;
+  }
+}
+
+// =============================================================== Select option
+.select-option {
+  position: relative;
+  > select {
+    background-color: #fff;
+    font-size: $font-size-base;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: $text-heading;
+    display: block;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    @include border-radius;
+    height: 32px;
+    padding: 2px 20px 2px 4px;
+    box-shadow: none;
+    position: relative;
+    border-color: $border-color;
+  }
+
+  &:after {
+    background-image: url(../img/icon-arrow-dropdown.svg);
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 20px;
+    background-position: 30%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 10;
+  }
+}

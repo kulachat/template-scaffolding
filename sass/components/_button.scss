@@ -1,0 +1,75 @@
+[class*="btn-"] {
+  background-color: transparent;
+  display: inline-block;
+  border: none;
+  line-height: 16px;
+  padding: ($gutter * 2) ($gutter * 3) ;
+}
+
+[class*="btn-"] + [class*="btn-"] {
+  margin-left: $gutter * 2;
+}
+
+@mixin btn-hover($color) {
+  &:hover {
+    background-color: darken($color, 5%);
+  }
+}
+
+.btn-default {
+  border: 1px solid $border-color;
+  background-color: $ci-gray;
+  @include btn-hover($ci-gray);
+}
+
+.btn-primary {
+  background-color: $ci-brand;
+  border: 1px solid $ci-brand;
+  color: #fff;
+  @include btn-hover($ci-brand);
+}
+
+.btn-manage {
+  background-color: $ci-manage;
+  border: 1px solid $ci-manage;
+  color: #fff;
+  @include btn-hover($ci-manage);
+}
+
+.btn-delete {
+  background-color: $ci-delete;
+  border: 1px solid $ci-delete;
+  color: #fff;
+  @include btn-hover($ci-delete);
+}
+
+.btn-success {
+  background-color: $ci-green;
+  border: 1px solid $ci-green;
+  color: #fff;
+  @include btn-hover($ci-green);
+}
+
+.btn-type-search {
+  border: none;
+  background-image: url(../img/search-icon.svg);
+  padding: 10px;
+  background-color: transparent;
+  height: 28px;
+  width: 38px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  border-left: 1px solid $border-color;
+  @include animation;
+
+  &:focus,
+  &:hover {
+    background-color: $ci-gray;
+    outline: none;
+    border-color: $border-color;
+  }
+}

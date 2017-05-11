@@ -1,0 +1,8 @@
+@mixin animation {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+@mixin border-radius {
+  border-radius: $border-radius;
+}

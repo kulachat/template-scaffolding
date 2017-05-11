@@ -1,3 +1,60 @@
-.slider {
-  height: 680px;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: $font-size-base;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: $text-heading;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga","kern";
+}
+
+.wrapper {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-face;
+  font-size: $font-size-heading;
+}
+
+.reset {
+  margin: 0;
+}
+
+// Display
+.attr-inline-block {
+  display: inline-block;
+}
+
+// Alignment
+.text-right {
+  text-align: right;
+}
+
+// Position
+.ps-r {
+  position: relative;
+}
+
+.ps-a {
+  position: absolute;
+}
+
+.ps-s {
+  position: static;
 }

@@ -375,6 +375,8 @@ input, textarea {
     font-size: 14px;
     display: inline-block;
     margin-right: 8px; }
+  .input-data .label-bold {
+    font-weight: bold; }
   .input-data .full-input {
     min-width: 420px; }
   .input-data .alignment-label {
@@ -492,7 +494,8 @@ body {
   -moz-font-feature-settings: "liga","kern"; }
 
 .wrapper {
-  max-width: 80%;
+  max-width: 960px;
+  padding: 0 20px;
   margin: auto;
   padding-top: 120px; }
 

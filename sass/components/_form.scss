@@ -19,6 +19,10 @@ input, textarea {
     display: inline-block;
     margin-right: $gutter * 2;
   }
+  
+  .label-bold {
+    font-weight: bold;
+  }
 
   .full-input {
     min-width: $width-input;

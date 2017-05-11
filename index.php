@@ -54,7 +54,32 @@
       <input type="button" value="Monitoring" id="bt_clear" class="btn-success"/>
       <input type="button" value="บันทึก" id="bt_clear" class="btn-success"/>
     </div>
+    <br>
+    <br>
     <!-- Checkbox and Radio -->
+    <h2 class="title">Checkbox and Radio</h2>
+    <div class="input-data">
+      <label class="label-bold">ประเภทประกาศ: </label>
+      <label>
+        <input name="search_from" type="radio" value="elastic" checked="">
+        Elastic
+      </label>
+      <label>
+	     <input name="search_from" type="radio" value="db">
+       DB
+      </label>
+    </div>
+    <div class="input-data">
+      <label class="label-bold">สถานะตรวจสอบ: </label>
+      <label>
+        <input name="search_from" type="checkbox" value="db">
+        รอตรวจสอบ (แก้ไข)
+      </label>
+      <label>
+        <input name="search_from" type="checkbox" value="db">
+        รอตรวจสอบ (2nd chance)
+      </label>
+    </div>
   </div>
 </body>
 <html>
